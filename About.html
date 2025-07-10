@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+        *{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+
+}
+body{      font-family: "PT Serif", serif;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color:#000;
+}
+.logo{
+    padding-left: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo P span{
+    color: #f08804;
+    padding-right: 5px;
+    animation: slideLeft 1.5s  ease-in forwards;
+    opacity: 0;
+}
+.logo p{
+    color: #fff;
+    font-weight: 500;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 40px;
+    margin-right: 25px;
+    animation: slideTop 1s 1s ease forwards;
+    opacity: 0;
+    animation-delay: calc(.2s*var(--i));
+}
+#home-link{color: #fff; background-color: #f08804;}
+#home-link:hover{color: #000; background-color: #fff; box-shadow: 0 0 15px #f08804;}
+.navbar a:hover{ 
+    color: #000; 
+    background-color: #fff;
+    box-shadow: 0 0 15px #f08804;
+}
+.btn{
+    padding-right: 50px;
+}
+.btn a{
+    display: inline;
+    text-align: center;
+    max-width: 200px;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    background: transparent;
+    box-shadow: 0 0 10px #f08804 , inset 0 0 10px #f08804;
+}
+.btn a:hover{
+    cursor: pointer; 
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px #f08804;
+}
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 30px;
+            font-family: "miniver",sanssarif; 
+        }
+        h1 span{
+            color: #f08804;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+         .image{
+            margin-top: 40px;
+            margin-right: 20px;
+            padding-right: 100px;
+        }
+        .image img{
+            height: 400px;
+            width: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+            animation: moveAndFade 3s infinite;
+        }
+        @keyframes moveAndFade{
+    0%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(100px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+        .para {
+            margin-top: 30px;
+            margin-left: 40px;
+            height: 400px;
+            width: 400px;
+        }
+        .para h2{
+            margin-top: 10px;
+            color: #f08804;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+        .para p{
+            line-height: 40px;
+            font-size: 1.5rem;
+        }
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+         .container2 .image2{
+            margin-top: 40px;
+            margin-right: 20px;
+            padding-right: 100px;
+        }
+        .image2 img{
+            height: 400px;
+            width: 500px;
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+    
+        .para2 {
+            margin-top: 30px;
+            margin-left: 40px;
+            height: 400px;
+            width: 400px;
+        }
+        .para2 h2{
+            margin-top: 10px;
+            color: #f08804;
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+        .para2 p{
+            line-height: 40px;
+            font-size: 1.5rem;
+        }
+        footer{
+    text-align: center;
+    color: #f08804;
+    background-color: #000;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: "miniver",sanssarif;
+}
+
+
+@keyframes slideRight{
+100%{
+transform: translateY(0px);
+opacity: 1;
+}
+0%{
+transform: translateY(100px);
+opacity: 0;
+}
+}
+
+@keyframes slideTop{
+100%{
+transform: translateY(0px);
+opacity: 1;
+}
+0%{
+transform: translateY(-100px);
+opacity: 0;
+}
+}
+@keyframes slideBottom{
+0%{
+transform:translatey(100px);
+opacity: 0;
+}
+100%{
+transform: translateY(0px);
+opacity: 1;
+}
+}
+@keyframes slideLeft{
+0%{
+transform:translateX(-100px);
+opacity: 0;
+}
+100%{
+transform: translateX(0px);
+opacity: 1;
+}
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p><span>PEOPLE </span>BUS SERVICE</p>
+        </div>
+        <div class="navbar">
+            <a href="webpage2.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="btn">
+            <a href="purchase_ticket.html">Purchase Ticket</a>
+          </div>
+    </header>
+    <section>
+        <h1>About <span>Us</span></h1>
+        <div class="container1">
+            
+            <div class="image">
+                <img src=" download (24).jpeg">
+            </div>
+            <div class="para">
+                <h2>About of People Bus Services</h2>
+                <p> People bus service, formally known as the Sindh
+                    intra-district peoples bus service project is a public
+                    bus service by the government of sindh operating in karachi,
+                    hyderabad, sukkur, larkana, mirpurkhas and nawabshah.  
+                </p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="image2">
+                <img src=" images (7).png">
+            </div>
+       
+        <div class="para2">
+            <h2>History</h2>
+            <p>It was inaugurated on 27 june 2022. the buses will operate form 8 A.m to 8 p.m. 
+               fares for the transportation are between PKR 50-100, due to ongoing inflation 
+               a change to fares were proposed however were rejected.
+            </p>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Reliable, affortable, and efficient transportation for a connected, progreesive community.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+
+/* ===== Responsive Sheet ======= */
+@media (max-width:400px){
+  .navbar,.btn{
+    display: none;
+  }
+  header{
+    padding: 10px 4px ;
+  }
+  .home-container{
+   background-blend-mode: darken;
+   height: 100%;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+  background: rgba(0, 0, 0, 0.6) url(blackmetro.jpg);
+  }
+  .sidemenu-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .burger{
+    display: block;
+  }
+  .logo{
+    font-size: 1.2rem;
+  }
+  .logo span{
+    font-size: 1.7rem;
+  }
+  .signup{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    width: 90%;
+  }
+  .signup h2{
+    font-size: 1rem;
+  }
+  .signup-inputs input{
+    padding: 5px;
+  }
+  .signup-inputs .forget{
+    flex-direction: column;
+  }
+  .home-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    margin: 0%;
+    height: max-content;
+  }
+  .home-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 40px;
+  }
+  .home-content .heading{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 10px 0px 15px;
+  }
+  .home-content .heading h1{
+    font-size: 2.1rem;
+  }
+  .home-content .para{
+    width: 100%;
+  }
+  .home-content .para{
+      padding: 5px 15px;
+  }
+  .home-content .para p{
+    font-size: 1rem;
+    line-height:25px;
+  }
+  .home-content .btn2{
+    padding: 10px 8px;
+    display: flex;
+  }
+  .btn2 button{
+    padding: 8px 15px;
+    letter-spacing: normal;
+  }
+
+/* ===== About Section  ---   */
+.about{
+  padding: 20px 0px;
+  margin: 0%;
+}
+.about-container{
+   display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.about h1{
+  font-size: 2.2rem;
+}
+.image-about{
+  width: 100%;
+}
+.image-about img{
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: none;
+}
+.para-about h2{
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.para-about{
+  width: 100%;
+}
+.para-about p{
+  font-size: 1.1rem;
+}
+
+/* ===== Service Section ------- */
+
+.service-wrap {
+    flex-direction: row;
+    margin: 20px auto;
+  }
+
+  .card-container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .card-container .card-list:nth-child(2){
+    display: none;
+  }
+  .card-container .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    grid-template-columns:repeat(normal);
+    padding: 0;
+  }
+
+  .card-list .card {
+    flex: 0 0 100%;
+    width: 300px;
+    margin: 0 5px;
+    scroll-snap-align: center;
+    padding: 5px;
+  }
+
+  #backbtn,
+  #nextbtn {
+    display: none; /* hide arrows on mobile */
+  }
+
+  .card-image img {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+  .image-changer{
+   display: none;
+  }
+  .contact{
+    margin: 20px 5px;
+}
+.contact-container{
+      padding: 5px 0px;
+    width: 100%;
+  }
+  .contact-inputs input{
+    padding: 8px 10px;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+  .contact-inputs input::placeholder{
+    font-size: 0.8rem;
+
+  }
+   .contact-inputs textarea{
+    width: 100%;
+    border-radius: 0.4rem;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-logo h1{
+    padding: 10px 0px 10px 0px;
+    font-size: 2.5rem;
+  }
+  .footer-logo h1 span{
+    font-size: 1.5rem;
+  }
+  .our-services{
+    margin: 10px 0px;
+    padding: 0px 20px;
+  }
+  .pages-link{
+    display: inline-block;
+    align-self: center;
+    justify-content: center;
+  }
+  .pages-link a{
+    font-size: 1rem;
+    margin: 0px 5px;
+  }
+  .footer-account{
+    display: inline-block;
+    flex-direction: column;
+    align-self: center;
+    padding: 20px 0px;
+  }
+}

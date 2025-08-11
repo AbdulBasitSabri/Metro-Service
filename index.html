@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>People Bus Service</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style400.css">
+    <!-- =====  Icon Link -->
+    <link rel="short icon" href="download (24).jpeg" />
+    <!-- =====  Swipper Link ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- =====  Aos Link ======= -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ==== Cdn Icons Link ====== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <p><span>People </span>Bus Service</p>
+      </div>
+      <div class="navbar">
+        <a href="#home" style="--i: 1" id="home-link">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#service" style="--i: 3">Services</a>
+        <a href="#contact" style="--i: 4">Contact Us</a>
+      </div>
+      <div class="btn">
+        <button id="signupBtn">Sign Up</button>
+        <button id="loginBtn">Login</button>
+      </div>
+      <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="sidemenu" id="sidemenu">
+          <div class="sidemenu-nav" >
+        <a href="#home" style="--i: 1" id="home-link">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#service" style="--i: 3">Services</a>
+        <a href="#contact" style="--i: 4">Contact Us</a>
+          </div>
+        <div class="sidemenu-btn">
+          <button id="signupBtn2">Sign Up</button>
+          <button id="loginBtn">Login</button>
+        </div>
+      </div>
+
+        <form  id="user-data">
+        <div  class="signup" id="signupForm">
+          <div class="icon">
+            <i class="fa-solid fa-xmark" id="crossBtn"></i>
+          </div>
+          <h2>Please Fill This Form.</h2>
+          <div class="signup-inputs">
+            <input type="text" id="name" placeholder="Enter Your Name" required title="Enter Your Name">
+            <input type="email" id="email" placeholder="Enter Your Email" required title="Enter Your Email">
+            <input type="password" id="password" placeholder="Password" required title="Password">
+            <div class="forget">
+              <p>Are you remmeber. <input type="checkbox"></p>
+              <p><a href="#">Forget Password?</a></p>
+            </div>
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+        </form>
+      </header>
+
+    <!-- === Home Section ====== -->
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <div class="heading">
+            <h1>People Bus Services</h1>
+          </div>
+          <div class="para">
+            <p>
+              People Bus Service, formally known as the Sindh Intra-District
+              Peoples Bus Service Project is a Pubilc Bus Service.
+            </p>
+          </div>
+          <div class="btn2">
+            <a href="#"><button>Purchase Ticket</button></a>
+            <a href="#"><button id="button1">Booking</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === About Section ====== -->
+    <section class="about" id="about">
+      <h1>About <span>Us</span></h1>
+      <div class="about-container">
+        <div class="image-about">
+          <img src="download (24).jpeg" />
+        </div>
+        <div class="para-about">
+          <h2>About of People Bus Services</h2>
+          <p>People bus service, formally known as the Sindh intra-district.</p>
+          <br />
+          <p>
+            The introduction of the PBS in Mirpurkhas aims to address
+            longstanding transportation challenges faced by residents, offering
+            them a reliable and cost-effective commuting option. The Sindh
+            government subsidizes the service to maintain affordable fares for
+            the public
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Service Section ====== -->
+
+    <section class="service" id="service">
+      <div class="service-container">
+        <div class="service-wrap">
+          <img src="arrow left.webp" alt="" id="backbtn" />
+          <div class="card-container">
+            <div class="card-list">
+              <div class="card">
+                <div class="card-image">
+                  <img src="cloud-server.png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>Server Connection</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                    
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <button id="cardBtn">Read More</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="wifi.png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>WiFi Service</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <a href="#"><button>Read More</button></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="support.png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>Customer Help Service</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <a href="#"><button>Read More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="card-list">
+              <div class="card">
+                <div class="card-image">
+                  <img src="shield.png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>Easy and Comfort</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <a href="#"><button>Read More</button></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="location.png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>Track Location</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <a href="#"><button>Read More</button></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img src="images (4).png" alt="" />
+                </div>
+                <div class="card-content">
+                  <h1>Bus Maintainence</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates, delectus.
+                    
+                  </p>
+                </div>
+                <div class="card-btn">
+                  <button id="cardBtn">Read More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="arrow right.webp" alt="" id="nextbtn" />
+        </div>
+      </div>
+    </section>
+    <marquee direction="x">People Bus Service In Mirpurkhas</marquee>
+
+    <section class="image-changer">
+      <img src="pixnio 45.jpg">
+    </section>
+
+    <!-- ===== Contact Section ====== -->
+         <section class="contact" id="contact">
+        <div class="contact-container" data-aos="fade-up">
+            <div class="contact-inputs">
+                    <input type="text"   id="inputData" required placeholder="First Name" name="first-name">
+                    <input type="text"   id="inputData" required placeholder="Last Name" name="last-name">
+                    <input type="email"  id="inputData" required placeholder="Email" name="email">
+                    <input type="number" id="inputData" required placeholder="00092-317-0022324" name="phone">
+                    <textarea name="message" required id="message" rows="6" placeholder="Enter Your Message"></textarea>
+            </div>
+                <button type="submit" class="submit-btn" id="submitBtn" >Submit</button></a>
+        </div>
+    </section>
+
+        <!-- ===== footer ====== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>People <span>Bus Service</span></h1>
+            </div>
+            <div class="footer-content">
+                <div class="our-services">
+                    <h2>Our Services</h2>
+                    <a href="#">City rides</a>
+                    <a href="#">Comfortable Ride</a>
+                    <a href="#">Time To Time Stop</a>
+                    <a href="#">Easy to Pay</a>
+                </div>
+           
+            </div>
+        </div>
+        <div class="social-container">
+                    <a href="#" style="--i:1"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" style="--i:2"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="--i:3"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="--i:4"><i class="fa-brands fa-x-twitter"></i></a>           
+        </div>
+        <div class="pages-link">
+            <a href="#home">Home</a>
+            <a href="#about">About us</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-account">
+            <a href="#">Legal documents</a>
+            <a href="#">Compilance</a>
+            <a href="#" id="delete-account">Delete account</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        delay: 50,
+        offset : 200,
+        duration : 1000,
+        mirror : true,
+        once : false
+    });
+
+  </script>
+  </body>
+</html>
